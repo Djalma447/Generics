@@ -6,14 +6,14 @@ namespace Generics1
     {
         static void Main(string[] args)
         {
-            PrintService<int> ps = new PrintService<int>();
+            PrintService<string> ps = new PrintService<string>();
             
             Console.Write("How many values? ");
             int n = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < n; i++)
             {
-                int x = int.Parse(Console.ReadLine());
+                string x = Console.ReadLine();
                 ps.AddValue(x);
             }
 
